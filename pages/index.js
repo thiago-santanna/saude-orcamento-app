@@ -1,14 +1,6 @@
-
-import Header from "../components/header"
-
 export default function Home() {
   return (
     <>
-      <header className="p-4 bg-slate-900 text-white h-16 flex items-center">
-        <span className="pr-4">Logo Marca</span>
-        <span className="pl-4 text-xl">Nome da empresa</span>
-        <Header />
-      </header>
       <div className='h-screen overflow-hidden flex flex-col items-center bg-white'>
 
         <h1 className='font-bold text-2xl p-8'>Monte seu plano</h1>
