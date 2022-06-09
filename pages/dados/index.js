@@ -61,7 +61,7 @@ export default function Dados() {
                   htmlFor='telefone'
                   className='text-sm text-gray-600 dark:text-gray-200'
                 >
-                  Senha no Lapwin
+                  Telefone
                 </label>
               </div>
 

@@ -1,10 +1,10 @@
 import Link from "next/link";
+import Port from "../components/porte-entidade";
 
 export default function Home() {
   return (
     <>
-      <div className='h-screen  flex flex-col items-center bg-white'>
-
+      <div className='flex flex-col items-center bg-white'>
         <h1 className='font-bold text-2xl p-8'>Monte seu plano</h1>
         <p className='p-2 text-center mb-4'>Precisamos de algumas informações para sugerirmos o melhor plano.</p>
         <div className='border-b-2 border-sky-600 rounded-b-lg text-gray-800 p-4 w-full text-center'>
@@ -31,7 +31,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* bg-sky-600  */}
+
         <div className="w-full">
           <h1 className='font-bold text-2xl p-8'>Qual seu plano?</h1>
           <div className='border-b-2 border-sky-600 rounded-b-lg text-gray-800 p-4 text-center'>
@@ -59,40 +59,7 @@ export default function Home() {
         <div className="w-full">
           <h1 className='font-bold text-2xl p-8'>Qual porte de sua empresa?</h1>
           <div className="flex flex-col gap-4">
-            <div className='bg-sky-600 text-white p-2 text-center'>
-              <div className='flex items-center justify-center'>
-                <input className='rounded-md h-8 w-20 mr-4' name='sim' type="number" />
-                <span className="text-xl font-bold"> 00 a 18</span>
-              </div>
-            </div>
-
-            <div className='bg-sky-600 text-white p-2 text-center'>
-              <div className='flex items-center justify-center'>
-                <input className='rounded-md h-8 w-20 mr-4' name='sim' type="number" />
-                <span className="text-xl font-bold"> 00 a 18</span>
-              </div>
-            </div>
-
-            <div className='bg-sky-600 text-white p-2 text-center'>
-              <div className='flex items-center justify-center'>
-                <input className='rounded-md h-8 w-20 mr-4' name='sim' type="number" />
-                <span className="text-xl font-bold"> 00 a 18</span>
-              </div>
-            </div>
-
-            <div className='bg-sky-600 text-white p-2 text-center'>
-              <div className='flex items-center justify-center'>
-                <input className='rounded-md h-8 w-20 mr-4' name='sim' type="number" />
-                <span className="text-xl font-bold"> 00 a 18</span>
-              </div>
-            </div>
-
-            <div className='bg-sky-600 text-white p-2 text-center'>
-              <div className='flex items-center justify-center'>
-                <input className='rounded-md h-8 w-20 mr-4' name='sim' type="number" />
-                <span className="text-xl font-bold"> 00 a 18</span>
-              </div>
-            </div>
+            <Port />
           </div>
         </div>
 
@@ -101,7 +68,6 @@ export default function Home() {
             <a className='text-sky-500 text-lg pl-1 focus:outline-none focus:underline hover:underline'>Toque para finalizar seu cadastro</a>
           </Link>
         </div>
-
       </div>
     </>
   )
