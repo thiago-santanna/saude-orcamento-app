@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
@@ -93,6 +95,13 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="py-4 px-4 mt-4 ml-8 mr-8">
+          <Link href='#'>
+            <a className='text-sky-500 text-lg pl-1 focus:outline-none focus:underline hover:underline'>Toque para finalizar seu cadastro</a>
+          </Link>
+        </div>
+
       </div>
     </>
   )
