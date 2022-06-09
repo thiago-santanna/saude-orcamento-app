@@ -64,13 +64,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-4/5 text-center border-2 border-sky-600 rounded-lg py-4 px-4 my-4">
+        <div className="mb-4 w-4/5 text-center border-2 border-sky-600 rounded-lg py-4 px-4 my-4">
           <Link href='/dados'>
             <a className='text-sky-500 text-lg pl-1 focus:outline-none focus:underline hover:underline'>Toque para finalizar</a>
           </Link>
         </div>
+
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }

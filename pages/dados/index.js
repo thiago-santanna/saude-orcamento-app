@@ -7,7 +7,7 @@ export default function Dados() {
         <h1 className='font-bold text-2xl p-8'>Agora falta só um pouco!</h1>
         <h2 className="text-xl p-2">Dados para o contato</h2>
 
-        <div className='mt-8'>
+        <div className='mt-8 mb-4'>
           <form>
             <div className='mt-4'>
               <label
@@ -116,8 +116,8 @@ export default function Dados() {
             </div>
           </form>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 
