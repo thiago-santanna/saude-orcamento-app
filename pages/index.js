@@ -7,14 +7,14 @@ export default function Home() {
 
         <h1 className='font-bold text-2xl p-8'>Monte seu plano</h1>
         <p className='p-2 text-center mb-4'>Precisamos de algumas informações para sugerirmos o melhor plano.</p>
-        <div className='bg-sky-600 text-white p-4 w-full text-center'>
+        <div className='border-b-2 border-sky-600 rounded-b-lg text-gray-800 p-4 w-full text-center'>
           <span className='text-xl font-bold'>Possui plano?</span>
           <div className='flex items-center justify-between m-4'>
             <div className='flex items-center'>
               <input className='h-8 w-8 mr-4' name='sim' type="radio" />
               <label
                 htmlFor='sim'
-                className='block text-lg font-semibold text-white'
+                className='block text-lg font-semibold text-gray-800'
               >
                 SIM
               </label>
@@ -24,18 +24,18 @@ export default function Home() {
               <input className='h-8 w-8 mr-4' name='nao' type="radio" />
               <label
                 htmlFor='sim'
-                className='block text-lg font-semibold text-white'
+                className='block text-lg font-semibold text-gray-800'
               >
                 NÃO
               </label>
             </div>
           </div>
         </div>
-
+        {/* bg-sky-600  */}
         <div className="w-full">
           <h1 className='font-bold text-2xl p-8'>Qual seu plano?</h1>
-          <div className='bg-sky-600 p-4 text-center'>
-            <select className="w-full p-2">
+          <div className='border-b-2 border-sky-600 rounded-b-lg text-gray-800 p-4 text-center'>
+            <select className="w-full p-2 text-gray-800">
               <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
               <option value="AMIL" key="AMIL">AMIL</option>
               <option value="BRADESCO" key="BRADESCO">BRADESCO</option>
@@ -46,7 +46,7 @@ export default function Home() {
 
         <div className="w-full">
           <h1 className='font-bold text-2xl p-8'>Qual seu estado?</h1>
-          <div className='bg-sky-600 p-4 text-center'>
+          <div className='border-b-2 border-sky-600 rounded-b-lg text-gray-800 p-4 text-center'>
             <select className="w-full p-2">
               <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
               <option value="RIO DE JANEIRO" key="RIO DE JANEIRO">RIO DE JANEIRO</option>
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="py-4 px-4 mt-4 ml-8 mr-8">
+        <div className="border-2 border-sky-600 rounded-lg py-4 px-4 my-4 ml-8 mr-8">
           <Link href='#'>
             <a className='text-sky-500 text-lg pl-1 focus:outline-none focus:underline hover:underline'>Toque para finalizar seu cadastro</a>
           </Link>
