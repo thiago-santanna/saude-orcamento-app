@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Footer from "../components/footer";
 import Port from "../components/porte-entidade";
 
 export default function Home() {
@@ -69,6 +70,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

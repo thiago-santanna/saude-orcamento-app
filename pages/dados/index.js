@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Footer from '../../components/footer'
 
 export default function Dados() {
   return (
@@ -86,7 +86,7 @@ export default function Dados() {
                 htmlFor='documento'
                 className='block mb-2 text-sm text-gray-600 dark:text-gray-200'
               >
-                Endereço de e-mail
+                Informe Cnpj ou Cpf
               </label>
               <input
                 type='text'
@@ -117,6 +117,7 @@ export default function Dados() {
           </form>
         </div>
       </div>
+      <Footer />
     </>
   )
 
