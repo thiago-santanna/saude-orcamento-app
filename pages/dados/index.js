@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Footer from '../../components/footer'
 
 export default function Dados() {
@@ -111,7 +112,9 @@ export default function Dados() {
                 className='w-full px-4 py-2 tracking-wide text-white text-center transition-colors duration-200 transform bg-sky-500 rounded-md hover:bg-sky-400 focus:outline-none focus:bg-sky-400 focus:ring focus:ring-sky-300 focus:ring-opacity-50'
               >
                 {/* <Edit size={24} color='white' className='mr-3 inline' /> */}
-                <span className='text-lg'>Finalizar</span>
+                <Link href='/compare'>
+                  <a className='text-lg pl-1 focus:outline-none focus:underline hover:underline'>Finalizar</a>
+                </Link>
               </button>
             </div>
           </form>
