@@ -8,7 +8,7 @@ export default function Home() {
       <div className='flex flex-col items-center bg-white max-w-lg lg:m-auto'>
         <h1 className='font-bold text-2xl p-8'>Monte seu plano</h1>
         <p className='p-2 text-center mb-4'>Precisamos de algumas informações para sugerirmos o melhor plano. <span className="font-bold">É muito rápido</span></p>
-        <div className='border-l-2 border-sky-600 text-gray-800 p-4 w-full text-center'>
+        <div className='border-l-4 border-sky-600 text-gray-800 p-4 w-full text-center'>
           <span className='text-xl font-bold'>Possui plano?</span>
           <div className='flex items-center justify-between m-4'>
             <div className='flex items-center'>
@@ -35,7 +35,7 @@ export default function Home() {
 
         <div className="w-full">
           <h1 className='font-bold text-2xl p-8'>Qual seu plano?</h1>
-          <div className='border-l-2 border-sky-600 text-gray-800 p-4 text-center'>
+          <div className='border-l-4 border-sky-600 text-gray-800 p-4 text-center'>
             <select className="w-full p-2 text-gray-800">
               <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
               <option value="AMIL" key="AMIL">AMIL</option>
@@ -47,7 +47,7 @@ export default function Home() {
 
         <div className="w-full">
           <h1 className='font-bold text-2xl p-8'>Qual seu estado?</h1>
-          <div className='border-l-2 border-sky-600 text-gray-800 p-4 text-center'>
+          <div className='border-l-4 border-sky-600 text-gray-800 p-4 text-center'>
             <select className="w-full p-2">
               <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
               <option value="RIO DE JANEIRO" key="RIO DE JANEIRO">RIO DE JANEIRO</option>
