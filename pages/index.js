@@ -5,10 +5,10 @@ import Port from "../components/porte-entidade";
 export default function Home() {
   return (
     <>
-      <div className='flex flex-col items-center bg-white'>
+      <div className='flex flex-col items-center bg-white max-w-lg lg:m-auto'>
         <h1 className='font-bold text-2xl p-8'>Monte seu plano</h1>
-        <p className='p-2 text-center mb-4'>Precisamos de algumas informações para sugerirmos o melhor plano.</p>
-        <div className='border-b-2 border-sky-600 rounded-b-lg text-gray-800 p-4 w-full text-center'>
+        <p className='p-2 text-center mb-4'>Precisamos de algumas informações para sugerirmos o melhor plano. <span className="font-bold">É muito rápido</span></p>
+        <div className='border-l-2 border-sky-600 text-gray-800 p-4 w-full text-center'>
           <span className='text-xl font-bold'>Possui plano?</span>
           <div className='flex items-center justify-between m-4'>
             <div className='flex items-center'>
@@ -35,7 +35,7 @@ export default function Home() {
 
         <div className="w-full">
           <h1 className='font-bold text-2xl p-8'>Qual seu plano?</h1>
-          <div className='border-b-2 border-sky-600 rounded-b-lg text-gray-800 p-4 text-center'>
+          <div className='border-l-2 border-sky-600 text-gray-800 p-4 text-center'>
             <select className="w-full p-2 text-gray-800">
               <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
               <option value="AMIL" key="AMIL">AMIL</option>
@@ -47,7 +47,7 @@ export default function Home() {
 
         <div className="w-full">
           <h1 className='font-bold text-2xl p-8'>Qual seu estado?</h1>
-          <div className='border-b-2 border-sky-600 rounded-b-lg text-gray-800 p-4 text-center'>
+          <div className='border-l-2 border-sky-600 text-gray-800 p-4 text-center'>
             <select className="w-full p-2">
               <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
               <option value="RIO DE JANEIRO" key="RIO DE JANEIRO">RIO DE JANEIRO</option>
@@ -64,10 +64,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mb-4 w-4/5 text-center border-2 border-sky-600 rounded-lg py-4 px-4 my-4">
-          <Link href='/dados'>
-            <a className='text-sky-500 text-lg pl-1 focus:outline-none focus:underline hover:underline'>Toque para finalizar</a>
-          </Link>
+        <div className='mt-6 text-base'>
+          <button
+            type='button'
+            // onClick={handleInsertUser}
+            className='w-full px-4 py-2 tracking-wide text-white text-center transition-colors duration-200 transform bg-sky-600 rounded-md hover:bg-sky-400 focus:outline-none focus:bg-sky-400 focus:ring focus:ring-sky-300 focus:ring-opacity-50'
+          >
+            {/* <Edit size={24} color='white' className='mr-3 inline' /> */}
+            <Link href='/dados'>
+              <a className='text-lg pl-1 focus:outline-none focus:underline hover:underline'>Continuar</a>
+            </Link>
+          </button>
         </div>
 
         <Footer />

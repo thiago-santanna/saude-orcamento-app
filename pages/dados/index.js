@@ -4,8 +4,8 @@ import Footer from '../../components/footer'
 export default function Dados() {
   return (
     <>
-      <div className='h-screen  flex flex-col items-center bg-white'>
-        <h1 className='font-bold text-2xl p-8'>Agora falta só um pouco!</h1>
+      <div className='h-screen  flex flex-col items-center bg-white max-w-lg lg:m-auto'>
+        <h1 className='font-bold text-2xl p-8'>Falta só um pouco!</h1>
         <h2 className="text-xl p-2">Dados para o contato</h2>
 
         <div className='mt-8 mb-4'>
@@ -29,7 +29,7 @@ export default function Dados() {
                 //   })
                 // }}
                 placeholder='Digite seu nome'
-                className='block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-sky-400 focus:ring-sky-400 focus:outline-none focus:ring focus:ring-opacity-40'
+                className='block w-full px-4 py-2 mt-2 mb-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-sky-400 focus:ring-sky-400 focus:outline-none focus:ring focus:ring-opacity-40'
               />
             </div>
 
@@ -77,7 +77,7 @@ export default function Dados() {
                 //     l2senhau: event.target.value,
                 //   })
                 // }
-                placeholder='Digite seu telefone'
+                placeholder='(00)00000:0000'
                 className='block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-sky-400 dark:focus:border-sky-400 focus:ring-sky-400 focus:outline-none focus:ring focus:ring-opacity-40'
               />
             </div>
@@ -87,7 +87,7 @@ export default function Dados() {
                 htmlFor='documento'
                 className='block mb-2 text-sm text-gray-600 dark:text-gray-200'
               >
-                Informe Cnpj ou Cpf
+                CNPJ ou CPF
               </label>
               <input
                 type='text'
@@ -100,7 +100,6 @@ export default function Dados() {
                 //     l2uemail: event.target.value,
                 //   })
                 // }
-                placeholder='CNPJ ou CPF'
                 className='block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-sky-400 dark:focus:border-sky-400 focus:ring-sky-400 focus:outline-none focus:ring focus:ring-opacity-40'
               />
             </div>
@@ -109,7 +108,7 @@ export default function Dados() {
               <button
                 type='button'
                 // onClick={handleInsertUser}
-                className='w-full px-4 py-2 tracking-wide text-white text-center transition-colors duration-200 transform bg-sky-500 rounded-md hover:bg-sky-400 focus:outline-none focus:bg-sky-400 focus:ring focus:ring-sky-300 focus:ring-opacity-50'
+                className='w-full px-4 py-2 tracking-wide text-white text-center transition-colors duration-200 transform bg-sky-600 rounded-md hover:bg-sky-400 focus:outline-none focus:bg-sky-400 focus:ring focus:ring-sky-300 focus:ring-opacity-50'
               >
                 {/* <Edit size={24} color='white' className='mr-3 inline' /> */}
                 <Link href='/compare'>
