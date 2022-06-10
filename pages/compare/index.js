@@ -1,3 +1,4 @@
+import Footer from '../../components/footer'
 import PlanoCompare from '../../components/plano-compare'
 
 export default function Compare() {
@@ -11,6 +12,8 @@ export default function Compare() {
         <PlanoCompare />
         <PlanoCompare />
         <PlanoCompare />
+
+        <Footer />
       </div>
     </>
   )
