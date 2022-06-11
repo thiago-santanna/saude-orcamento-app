@@ -12,7 +12,7 @@ export default function Home() {
           <span className='text-xl font-bold'>Possui plano?</span>
           <div className='flex items-center justify-between m-4'>
             <div className='flex items-center'>
-              <input className='h-8 w-8 mr-4' name='sim' type="radio" />
+              <input className='h-8 w-8 mr-4' id="sim" name='tem_plano' type="radio" />
               <label
                 htmlFor='sim'
                 className='block text-lg font-semibold text-gray-800'
@@ -22,9 +22,9 @@ export default function Home() {
             </div>
 
             <div className='flex items-center'>
-              <input className='h-8 w-8 mr-4' name='nao' type="radio" />
+              <input className='h-8 w-8 mr-4' id="nao" name='tem_plano' type="radio" />
               <label
-                htmlFor='sim'
+                htmlFor='nao'
                 className='block text-lg font-semibold text-gray-800'
               >
                 NÃO

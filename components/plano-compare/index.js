@@ -37,7 +37,7 @@ export default function PlanoCompare() {
           >
             {/* <Edit size={24} color='white' className='mr-3 inline' /> */}
             <Link href='#'>
-              <a className='text-lg pl-1 focus:outline-none focus:underline hover:underline'>Selecionar</a>
+              <a className='text-lg pl-1 focus:outline-none focus:underline hover:underline'>Saiba mais</a>
             </Link>
           </button>
         </div>
