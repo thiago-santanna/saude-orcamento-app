@@ -4,7 +4,7 @@ import Footer from '../../components/footer'
 export default function Dados() {
   return (
     <>
-      <div className='h-screen  flex flex-col items-center bg-white max-w-lg lg:m-auto'>
+      <div className='h-screen  flex flex-col items-center bg-white max-w-lg m-auto'>
         <h1 className='font-bold text-2xl p-8'>Falta só um pouco!</h1>
         <h2 className="text-xl p-2">Dados para o contato</h2>
 

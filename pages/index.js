@@ -5,7 +5,7 @@ import Port from "../components/porte-entidade";
 export default function Home() {
   return (
     <>
-      <div className='flex flex-col items-center bg-white max-w-lg lg:m-auto'>
+      <div className='flex flex-col items-center bg-white max-w-2xl m-auto'>
         <h1 className='font-bold text-2xl p-8'>Monte seu plano</h1>
         <p className='p-2 text-center mb-4'>Precisamos de algumas informações para sugerirmos o melhor plano. <span className="font-bold">É muito rápido</span></p>
         <div className='border-l-4 border-sky-600 text-gray-800 p-4 w-full text-center'>
