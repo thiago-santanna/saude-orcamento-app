@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
+import Estados from '../components/estados'
 import Footer from '../components/footer'
 import Plano from '../components/planos'
 import Port from '../components/porte-entidade'
@@ -59,25 +60,7 @@ export default function Home() {
 
         {showPLano && <Plano />}
 
-        <div className='w-full'>
-          <h1 className='font-bold text-2xl p-8'>Qual seu estado?</h1>
-          <div className='border-l-4 border-sky-600 text-gray-800 p-4 text-center'>
-            <select className='w-full p-2'>
-              <option value='SELECIONE' key='SELECIONE'>
-                SELECIONE
-              </option>
-              <option value='RIO DE JANEIRO' key='RIO DE JANEIRO'>
-                RIO DE JANEIRO
-              </option>
-              <option value='PERNAMBUCO' key='PERNAMBUCO'>
-                PERNAMBUCO
-              </option>
-              <option value='SÃO PAULO ' key='SÃO PAULO'>
-                SÃO PAULO
-              </option>
-            </select>
-          </div>
-        </div>
+        <Estados />
 
         <div className='w-full'>
           <h1 className='font-bold text-2xl p-8'>Qual porte de sua empresa?</h1>
