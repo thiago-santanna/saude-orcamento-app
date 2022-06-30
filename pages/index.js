@@ -1,18 +1,36 @@
-import Link from "next/link";
-import Footer from "../components/footer";
-import Port from "../components/porte-entidade";
+import Link from 'next/link'
+import { useState } from 'react'
+import Footer from '../components/footer'
+import Plano from '../components/planos'
+import Port from '../components/porte-entidade'
 
 export default function Home() {
+  const [showPLano, setShowPlano] = useState(false)
+
+  function handleShowPlano(show) {
+    setShowPlano(show)
+  }
+
   return (
     <>
       <div className='flex flex-col items-center bg-white max-w-2xl m-auto'>
         <h1 className='font-bold text-2xl p-8'>Monte seu plano</h1>
-        <p className='p-2 text-center mb-4'>Precisamos de algumas informações para sugerirmos o melhor plano. <span className="font-bold">É muito rápido</span></p>
+        <p className='p-2 text-center mb-4'>
+          Precisamos de algumas informações para sugerirmos o melhor plano.{' '}
+          <span className='font-bold'>É muito rápido</span>
+        </p>
+
         <div className='border-l-4 border-sky-600 text-gray-800 p-4 w-full text-center'>
           <span className='text-xl font-bold'>Possui plano?</span>
           <div className='flex items-center justify-between m-4'>
             <div className='flex items-center'>
-              <input className='h-8 w-8 mr-4' id="sim" name='tem_plano' type="radio" />
+              <input
+                onClick={() => handleShowPlano(true)}
+                className='h-8 w-8 mr-4'
+                id='sim'
+                name='tem_plano'
+                type='radio'
+              />
               <label
                 htmlFor='sim'
                 className='block text-lg font-semibold text-gray-800'
@@ -22,7 +40,13 @@ export default function Home() {
             </div>
 
             <div className='flex items-center'>
-              <input className='h-8 w-8 mr-4' id="nao" name='tem_plano' type="radio" />
+              <input
+                onClick={() => handleShowPlano(false)}
+                className='h-8 w-8 mr-4'
+                id='nao'
+                name='tem_plano'
+                type='radio'
+              />
               <label
                 htmlFor='nao'
                 className='block text-lg font-semibold text-gray-800'
@@ -33,33 +57,31 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full">
-          <h1 className='font-bold text-2xl p-8'>Qual seu plano?</h1>
-          <div className='border-l-4 border-sky-600 text-gray-800 p-4 text-center'>
-            <select className="w-full p-2 text-gray-800">
-              <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
-              <option value="AMIL" key="AMIL">AMIL</option>
-              <option value="BRADESCO" key="BRADESCO">BRADESCO</option>
-              <option value="UNIMED " key="UNIMED">UNIMED</option>
-            </select>
-          </div>
-        </div>
+        {showPLano && <Plano />}
 
-        <div className="w-full">
+        <div className='w-full'>
           <h1 className='font-bold text-2xl p-8'>Qual seu estado?</h1>
           <div className='border-l-4 border-sky-600 text-gray-800 p-4 text-center'>
-            <select className="w-full p-2">
-              <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
-              <option value="RIO DE JANEIRO" key="RIO DE JANEIRO">RIO DE JANEIRO</option>
-              <option value="PERNAMBUCO" key="PERNAMBUCO">PERNAMBUCO</option>
-              <option value="SÃO PAULO " key="SÃO PAULO">SÃO PAULO</option>
+            <select className='w-full p-2'>
+              <option value='SELECIONE' key='SELECIONE'>
+                SELECIONE
+              </option>
+              <option value='RIO DE JANEIRO' key='RIO DE JANEIRO'>
+                RIO DE JANEIRO
+              </option>
+              <option value='PERNAMBUCO' key='PERNAMBUCO'>
+                PERNAMBUCO
+              </option>
+              <option value='SÃO PAULO ' key='SÃO PAULO'>
+                SÃO PAULO
+              </option>
             </select>
           </div>
         </div>
 
-        <div className="w-full">
+        <div className='w-full'>
           <h1 className='font-bold text-2xl p-8'>Qual porte de sua empresa?</h1>
-          <div className="flex flex-col gap-4">
+          <div className='flex flex-col gap-4'>
             <Port />
           </div>
         </div>
@@ -72,7 +94,9 @@ export default function Home() {
           >
             {/* <Edit size={24} color='white' className='mr-3 inline' /> */}
             <Link href='/dados'>
-              <a className='text-lg pl-1 focus:outline-none focus:underline hover:underline'>Continuar</a>
+              <a className='text-lg pl-1 focus:outline-none focus:underline hover:underline'>
+                Continuar
+              </a>
             </Link>
           </button>
         </div>

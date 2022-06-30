@@ -10,7 +10,7 @@ export default function Port() {
         </div>
 
         <div className="p-1">
-          <select>
+          <select className="p-2 text-gray-800">
             <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
             <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
             <option value="SELECIONE" key="SELECIONE">SELECIONE</option>
