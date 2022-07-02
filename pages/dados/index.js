@@ -2,11 +2,15 @@ import Link from 'next/link'
 import Footer from '../../components/footer'
 
 export default function Dados() {
+  function handlePostData() {
+    alert('Obrigado, entraremos em contato em breve.')
+  }
+
   return (
     <>
       <div className='h-screen  flex flex-col items-center bg-white max-w-lg m-auto'>
         <h1 className='font-bold text-2xl p-8'>Falta só um pouco!</h1>
-        <h2 className="text-xl p-2">Dados para o contato</h2>
+        <h2 className='text-xl p-2'>Dados para o contato</h2>
 
         <div className='mt-8 mb-4'>
           <form>
@@ -111,8 +115,14 @@ export default function Dados() {
                 className='w-full px-4 py-2 tracking-wide text-white text-center transition-colors duration-200 transform bg-sky-600 rounded-md hover:bg-sky-400 focus:outline-none focus:bg-sky-400 focus:ring focus:ring-sky-300 focus:ring-opacity-50'
               >
                 {/* <Edit size={24} color='white' className='mr-3 inline' /> */}
-                <Link href='/compare'>
-                  <a className='text-lg pl-1 focus:outline-none focus:underline hover:underline'>Finalizar</a>
+                {/* <Link href='/compare'> */}
+                <Link href='/'>
+                  <a
+                    onClick={() => handlePostData}
+                    className='text-lg pl-1 focus:outline-none focus:underline hover:underline'
+                  >
+                    Finalizar
+                  </a>
                 </Link>
               </button>
             </div>
@@ -122,5 +132,4 @@ export default function Dados() {
       </div>
     </>
   )
-
 }

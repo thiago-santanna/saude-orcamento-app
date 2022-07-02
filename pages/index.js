@@ -7,6 +7,7 @@ import Port from '../components/porte-entidade'
 
 export default function Home() {
   const [showPLano, setShowPlano] = useState(false)
+  const [generalData, setGeneralData] = useState({})
 
   function handleShowPlano(show) {
     setShowPlano(show)
