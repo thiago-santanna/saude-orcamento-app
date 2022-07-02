@@ -1,0 +1,12 @@
+{
+  "planos": [
+    { "nome": "Unimed" },
+    { "nome": "Bradesco" },
+    { "nome": "SulAmérica" },
+    { "nome": "Amil" },
+    { "nome": "Intermédica" },
+    { "nome": "Assim Saúde" },
+    { "nome": "Leve Saúde" },
+    { "nome": "MedSenior" }
+  ]
+}

@@ -1,4 +1,5 @@
 import styles from '../../styles/Plano.module.css'
+import { planos } from '../../public/planos.json'
 
 export default function Plano() {
   return (
@@ -8,17 +9,14 @@ export default function Plano() {
         <div className='border-l-4 border-sky-600 text-gray-800 p-4 text-center'>
           <select className='w-full p-2 text-gray-800'>
             <option value='SELECIONE' key='SELECIONE'>
-              SELECIONE
+              Selecione
             </option>
-            <option value='AMIL' key='AMIL'>
-              AMIL
-            </option>
-            <option value='BRADESCO' key='BRADESCO'>
-              BRADESCO
-            </option>
-            <option value='UNIMED ' key='UNIMED'>
-              UNIMED
-            </option>
+            {planos &&
+              planos.map((pln) => (
+                <option value={pln.nome} key={pln.nome}>
+                  {pln.nome}
+                </option>
+              ))}
           </select>
         </div>
       </div>
