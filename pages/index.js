@@ -63,9 +63,18 @@ export default function Home() {
         <Estados />
 
         <div className='w-full'>
-          <h1 className='font-bold text-2xl p-8'>Qual porte de sua empresa?</h1>
+          <h1 className='font-bold text-2xl p-4'>Qual porte de sua empresa?</h1>
           <div className='flex flex-col gap-4'>
-            <Port />
+            <Port faixa='0 - 18' />
+            <Port faixa='19 - 23' />
+            <Port faixa='24 - 28' />
+            <Port faixa='29 - 33' />
+            <Port faixa='34 - 38' />
+            <Port faixa='39 - 43' />
+            <Port faixa='44 - 48' />
+            <Port faixa='49 - 53' />
+            <Port faixa='54 - 58' />
+            <Port faixa='59 - +' />
           </div>
         </div>
 

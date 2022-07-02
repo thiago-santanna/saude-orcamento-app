@@ -1,7 +1,8 @@
 import styles from '../../styles/Plano.module.css'
-import { planos } from '../../public/planos.json'
+import jsonPlanos from '../../public/planos.json'
 
 export default function Plano() {
+  const planos = jsonPlanos.planos
   return (
     <>
       <div className={styles.box}>

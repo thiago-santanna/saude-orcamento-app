@@ -1,19 +1,14 @@
-export default function Port() {
+export default function Port({ faixa = '0 - 0' }) {
   return (
     <>
-      <div className='flex gap-2 border-l-4 border-sky-600 p-2 text-center justify-center'>
-        <div className='p-1'>
-          <button className='w-1/4 text-2xl'>-</button>
+      <div className='grid grid-cols-3 border-l-4 border-sky-600 p-2 text-center justify-center'>
+        <label className='text-gray-800 '>Vidas na faixa de:</label>
+        <div>
           <input className='w-1/2 border-2 border-sky-600' type='number' />
-          <button className='w-1/4 text-2xl'>+</button>
         </div>
 
         <div className='p-1'>
-          <select className='p-2 text-gray-800'>
-            <option value='SELECIONE' key='SELECIONE'>
-              SELECIONE
-            </option>
-          </select>
+          <label className='p-2 text-gray-800 '>{faixa}</label>
         </div>
       </div>
     </>

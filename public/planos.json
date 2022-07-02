@@ -1,5 +1,6 @@
 {
   "planos": [
+    { "nome": "Outro" },
     { "nome": "Unimed" },
     { "nome": "Bradesco" },
     { "nome": "SulAmérica" },
